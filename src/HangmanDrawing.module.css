@@ -1,0 +1,136 @@
+.drawSection {
+  position: relative;
+}
+
+.drawTop {
+  width: 17vmin;
+  height: 0.75vmin;
+  margin-left: 15vmin;
+
+  background: #000;
+}
+
+.drawUpright {
+  height: 40vmin;
+  width: 0.75vmin;
+  background: #000;
+  margin-left: 15vmin;
+}
+.drawHang {
+  position: absolute;
+  height: 4vmin;
+  width: 0.75vmin;
+  background: #000;
+  top: 0;
+  right: 0;
+}
+
+.drawBottom {
+  width: 30vmin;
+  height: 0.75vmin;
+  background: #000;
+}
+
+.head {
+  position: absolute;
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 100%;
+  border: 0.75vmin solid #000;
+  top: 3.5vmin;
+  right: -2.75vmin;
+}
+.body {
+  position: absolute;
+  width: 0.75vmin;
+  height: 12vmin;
+  background: #000;
+  top: 9vmin;
+  right: 0;
+}
+.rightArm {
+  position: absolute;
+  width: 0.75vmin;
+  height: 10vmin;
+  background: #000;
+  top: 5.5vmin;
+  right: -3.7vmin;
+  transform: rotate(50deg);
+}
+.leftArm {
+  position: absolute;
+  width: 0.75vmin;
+  height: 10vmin;
+  background: #000;
+  top: 5.5vmin;
+  right: 3.7vmin;
+  transform: rotate(-50deg);
+}
+.rightLeg {
+  position: absolute;
+  width: 0.75vmin;
+  height: 10vmin;
+  background: #000;
+  top: 20vmin;
+  right: -2.5vmin;
+  transform: rotate(-30deg);
+}
+.leftLeg {
+  position: absolute;
+  width: 0.75vmin;
+  height: 10vmin;
+  background: #000;
+  top: 20vmin;
+  right: 2.5vmin;
+  transform: rotate(30deg);
+}
+
+@media (max-width: 500px) {
+  .drawTop {
+    width: 22vmin;
+    height: 1vmin;
+  }
+  .drawUpright {
+    height: 50vmin;
+    width: 1vmin;
+  }
+
+  .drawUpright {
+    height: 50vmin;
+    width: 1vmin;
+  }
+  .drawHang {
+    width: 1vmin;
+  }
+
+  .drawBottom {
+    width: 32vmin;
+    height: 1vmin;
+  }
+
+  .head {
+    position: absolute;
+    width: 7vmin;
+    height: 7vmin;
+    border: 1vmin solid #000;
+  }
+  .body {
+    width: 1vmin;
+    height: 15vmin;
+    top: 9.5vmin;
+  }
+  .rightArm {
+    width: 1vmin;
+  }
+  .leftArm {
+    width: 1vmin;
+  }
+  .rightLeg {
+    width: 1vmin;
+    top: 23vmin;
+  }
+  .leftLeg {
+    width: 1vmin;
+    top: 23vmin;
+  }
+}

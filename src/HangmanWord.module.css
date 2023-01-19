@@ -1,0 +1,25 @@
+.wordSection {
+  display: flex;
+  gap: 0.25em;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.wordSection span {
+  border-bottom: 0.1em solid #000;
+}
+
+@media (max-width: 600px) {
+  .wordSection {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+}
+@media (max-width: 400px) {
+  .wordSection {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+}
