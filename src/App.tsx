@@ -19,7 +19,9 @@ function App() {
       <div className='result'>lose win</div>
       <HangmanDrawing />
       <HangmanWord />
-      <Keyboard />
+      <div className='stretch'>
+        <Keyboard />
+      </div>
     </div>
   );
 }

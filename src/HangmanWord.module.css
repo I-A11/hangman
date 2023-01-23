@@ -7,8 +7,16 @@
   font-family: monospace;
 }
 
-.wordSection span {
+.wordSection div {
   border-bottom: 0.1em solid #000;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 @media (max-width: 600px) {
