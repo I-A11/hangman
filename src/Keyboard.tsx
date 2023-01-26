@@ -27,12 +27,31 @@ const keys = [
   "y",
   "z",
 ];
-const Keyboard = () => {
+
+type KeyboardProps = {
+  activeLetters: string[];
+  inactiveLetters: string[];
+  addGuessedLetter: (letter: string) => void;
+};
+const Keyboard = ({
+  activeLetters,
+  inactiveLetters,
+  addGuessedLetter,
+}: KeyboardProps) => {
   return (
     <div className={styles.keySection}>
       {keys.map((key) => {
+        const active = activeLetters.includes(key);
+        const inactive = inactiveLetters.includes(key);
         return (
-          <button className={`${styles.btn} `} key={key}>
+          <button
+            className={`${styles.btn} ${active ? styles.active : ""} ${
+              inactive ? styles.inactive : ""
+            } `}
+            key={key}
+            onClick={() => addGuessedLetter(key)}
+            disabled={active || inactive}
+          >
             {key}
           </button>
         );

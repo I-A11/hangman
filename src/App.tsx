@@ -26,6 +26,10 @@ function App() {
     [guessedLetters]
   );
 
+  const activeLetters = guessedLetters.filter((letter) =>
+    wordToGuess.includes(letter)
+  );
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       const key = e.key;
@@ -46,7 +50,11 @@ function App() {
       <HangmanDrawing numberOfGuesses={inCorrectLetters.length} />
       <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
       <div className='stretch'>
-        <Keyboard />
+        <Keyboard
+          activeLetters={activeLetters}
+          inactiveLetters={inCorrectLetters}
+          addGuessedLetter={addGuessedLetter}
+        />
       </div>
     </div>
   );
